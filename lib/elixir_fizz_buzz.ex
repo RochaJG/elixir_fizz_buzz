@@ -1,18 +1,10 @@
 defmodule ElixirFizzBuzz do
-  @moduledoc """
-  Documentation for `ElixirFizzBuzz`.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> ElixirFizzBuzz.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def build(file_name) do
+    file_name
+    |> File.read()
+    |> handle_file()
   end
+
+  def handle_file({:ok, result}), do: result
+  def handle_file({:error, reason}), do: reason
 end
