@@ -1,21 +1,10 @@
 # ElixirFizzBuzz
 
-**TODO: Add description**
+> A simple project to prof Elixir concepts.
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `elixir_fizz_buzz` to your list of dependencies in `mix.exs`:
+That application converts every 3 multiple into `fizz` and every 5 multiple into `buzz` by a file provided with a list of numbers. 
+Like loading the [numbers.txt](numbers.txt) and returnig that response:
 
 ```elixir
-def deps do
-  [
-    {:elixir_fizz_buzz, "~> 0.1.0"}
-  ]
-end
+{:ok, [1, 2, :fizz, 4, :buzz, :buzz, :fizzbuzz, :buzz]}
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/elixir_fizz_buzz](https://hexdocs.pm/elixir_fizz_buzz).
-
